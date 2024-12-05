@@ -5,5 +5,10 @@
   "description": "This extension inverts the colors of the current webpage.",
   "icons": {
     "128": "assets/invert-128.png"
-  }
+  },
+  "permissions": ["activeTab"],
+  "background": {
+    "service_worker": "background.js"
+  },
+  "action": {}
 }
