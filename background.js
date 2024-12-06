@@ -6,6 +6,5 @@ chrome.action.onClicked.addListener((tab) => {
 });
 
 function invertPageColors() {
-    alert("Invert page color.")
-    // document.body.style.filter = "invert(100%) !important";
+    document.body.style.filter = "invert(100%)";
 }
