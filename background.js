@@ -6,5 +6,12 @@ chrome.action.onClicked.addListener((tab) => {
 });
 
 function invertPageColors() {
-    document.body.style.filter = "invert(100%)";
+  const htmlElement = document.documentElement;
+  const filter = htmlElement.style.filter;
+
+  if (filter === "invert(100%) hue-rotate(180deg)") {
+    htmlElement.style.filter = "";
+  } else {
+    htmlElement.style.filter = "invert(100%) hue-rotate(180deg)";
+  }
 }
