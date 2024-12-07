@@ -11,7 +11,9 @@ function invertPageColors() {
 
   if (filter === "invert(100%) hue-rotate(180deg)") {
     htmlElement.style.filter = "";
+    htmlElement.style.transition = "";
   } else {
     htmlElement.style.filter = "invert(100%) hue-rotate(180deg)";
+    htmlElement.style.transition = "filter 0.3s ease-in-out";
   }
 }
